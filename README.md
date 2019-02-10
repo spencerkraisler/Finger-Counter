@@ -10,6 +10,7 @@ but the latter is able to track the location of your hand.
 
 # ConvNet
 counter.py
+
 ![convnet test](./images/CNN_test.gif)
 
 This one is pretty simple. There's a green box and whatever 
@@ -19,7 +20,8 @@ Works best with the cnn2.h5 weights, and against a white wall in a well lit area
 
 
 # Single Shot Detector (SSD) + ConvNet
-tracker-counter.py
+tracker-counter.py\
+
 ![sdd convnet test](./images/SNN_CNN.gif)
 
 This architectire was heavily inspired by MrEliptik's HandPose model (https://github.com/MrEliptik/HandPose). I also used the SSD he trained.
