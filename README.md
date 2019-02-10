@@ -20,7 +20,7 @@ Works best with the cnn2.h5 weights, and against a white wall in a well lit area
 
 
 # Single Shot Detector (SSD) + ConvNet
-tracker-counter.py\
+tracker-counter.py
 
 ![sdd convnet test](./images/SNN_CNN.gif)
 
