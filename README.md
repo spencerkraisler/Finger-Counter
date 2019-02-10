@@ -22,7 +22,7 @@ Works best with the cnn2.h5 weights, and against a white wall in a well lit area
 # Single Shot Detector (SSD) + ConvNet
 tracker-counter.py
 
-![sdd convnet test](./images/SNN_CNN.gif)
+![sdd convnet test](./images/SNN_CNN_test.gif)
 
 This architectire was heavily inspired by MrEliptik's HandPose model (https://github.com/MrEliptik/HandPose). I also used the SSD he trained.
 
