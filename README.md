@@ -39,4 +39,4 @@ Single Shot Detector (https://arxiv.org/pdf/1512.02325.pdf) is a bit more compli
 
 # ToDo
 - fine-tune ConvNet a bit more
-- train ssd on more data
+- train SSD on more data
