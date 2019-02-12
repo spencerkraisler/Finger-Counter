@@ -27,6 +27,9 @@ from keras.optimizers import Adam
 
 input_shape = (28, 28, 1)
 num_classes = 6
+WEIGHTS_FILE = "./cnn/cnn2.h5"
+p1 = (150, 150) # detection box upper left coordinate
+p2 = (400, 430) # detection box lower right coordinate
 
 model = Sequential()
 model.add(Conv2D(32, kernel_size=(3, 3), input_shape=input_shape))
@@ -46,10 +49,7 @@ model.add(Dropout(0.5))
 model.add(Dense(num_classes))
 model.add(Softmax())
 model.summary()
-model.load_weights("./cnn/cnn2.h5")
-
-p1 = (150, 150)
-p2 = (400, 430)
+model.load_weights(WEIGHTS_FILE)
 
 while(True):
 	_, frame = cap.read()
@@ -63,8 +63,7 @@ while(True):
 	text = "fingers: " + str(prediction) + " - " + str((inferences[prediction] * 100).astype('uint8')) + "%"
 	cv2.putText(frame, text, org=(150, 50), fontFace=cv2.FONT_HERSHEY_SIMPLEX, fontScale=2, thickness=5, color=(0,200,0))
 	box_image = cv2.resize(box_image, (100, 100))
-	box_image = np.resize(box_image, (100, 100, 1))
-
+	box_image = np.resize(box_image, (100, 100, 1)) # turn grayscale image into 3D array
 	frame[0:box_image.shape[0], 0:box_image.shape[1]] = box_image
 	cv2.rectangle(frame, p1, p2, (77, 255, 9), 3, 1)
 	cv2.imshow('frame', frame)
