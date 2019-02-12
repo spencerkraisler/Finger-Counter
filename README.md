@@ -16,7 +16,7 @@ counter.py
 This one is pretty simple. There's a green box and whatever 
 is in it is fed into a ConvNet. 
 
-Works best against a white wall in a well lit area. I trained it on photos taken in front of a whiteback background.
+Works best against a white wall in a well lit area.
 
 
 # Single Shot Detector (SSD) + ConvNet
