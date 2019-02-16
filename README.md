@@ -24,7 +24,7 @@ tracker-counter.py
 
 ![sdd convnet test](./images/SNN_CNN_test.gif)
 
-This architectire was heavily inspired by MrEliptik's HandPose model (https://github.com/MrEliptik/HandPose). I also used the SSD he trained.
+This architecture was heavily inspired by MrEliptik's HandPose model (https://github.com/MrEliptik/HandPose). I also used the SSD he trained.
 
 An SSD detects and places a min-area bounding box around your hand. An image is cropped from it and fed into a ConvNet. 
 
